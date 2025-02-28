@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!--Author: Dory Gillikin-->
+
+<html lang="en">
+<head>
+<title>Aloha Cruise</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--favicon-->
+<link rel="icon" type="image/png" href="favicon.ico">	
+   
+   <!--external style sheet-->	
+<link href="StyleSheet.css" rel="StyleSheet">
+	</head><br></br>
+	
+<style>
+<!--embedded style-->
+* {box-sizing: border-box;}
+
+body {font-family: Verdana, Arial, sans-serif;
+}
+
+header, h1, #wrapper{ margin: 3.5px; border: 3px solid #008080;
+	border-radius: 2em;
+}
+#wrapper {background-color: #20B2AA; 
+	        width: 90%;
+		margin: auto;
+            	color: #E0FFFF;
+		display: grid;
+            grid-template-columns: 160px 1fr 240px;
+            grid-template-rows: 200px auto 100px;
+} 
+h1, h2{ color: #E0FFFF;
+		text-shadow: 1.5px 1.5px 1.5px black;
+		font-family: Verdana, Arial, sans-serif;
+}
+header{ background: url('blue.jpg');
+          	 font: 
+		 background-size: cover; 
+		 grid-row: 1 / 2;
+         grid-column: 1 / 4;
+}
+h1 { text-align: center;
+     font-size: 290%;
+	 padding: 5% 0;
+font-style: Garamond;
+	 font-style: italic;
+	 letter-spacing: .09em;
+	 text-shadow: 1.5px 1.5px 1.5px #000080;
+     	 color: #F0FFFF;
+}
+p{	font-family: Verdana, Arial, sans-serif;
+	font-size: 120%;
+	color: #F0FFFF;
+	text-shadow: 1.5px 1.5px 1.5px black;
+	line-height: 2;
+}
+
+nav { grid-row: 2 / 3;
+	  grid-column: 1 / 2;
+}
+main {   grid-row: 2 / 3;
+         grid-column: 2 / 3;
+}
+aside { grid-row: 2 / 3;
+        grid-column: 3 / 4;
+}
+nav, main, aside {  padding: 0 1em; 
+}
+img { width: 100%; 
+      height: auto;
+}
+nav ul { list-style-type: none; 
+         font-size: 1.2em;
+		 padding-left: 0;
+		 line-height: 3;
+}
+nav a { text-decoration: none;}
+nav a:link { color: #008080; }
+
+nav a:hover { color: #1E90FF; }
+footer { text-align: center;
+         	font-size: 80%;
+		 font-style: italic;
+		 color: #4169E1;
+		 padding: 2.5%;
+		 grid-row: 3 / 4;
+         	grid-column: 1 / 4;
+}
+@media only screen and (max-width: 1024px) {
+            body { margin: 0; padding: 0; } 
+            #wrapper { width: auto; margin: 0; }
+		    h1 { font-size: 200%; }
+			nav ul { text-align: center; }
+			nav li { padding: 0 0.5em; 
+				     font-size: 1.2em; 	
+					 display: inline; }
+			#wrapper { grid-template-columns: 1fr 240px;
+                      grid-template-rows: 200px auto auto 100px;  }
+            header { grid-row:    1 / 2 ; 
+                     grid-column: 1 / 3; }		 
+            nav    { grid-row:    2 / 3;
+                     grid-column: 1 / 3; }
+            main   { grid-row:    3 / 4;
+                     grid-column: 1 / 2; }
+            aside  { grid-row:    2 / 3;
+                     grid-column: 2 / 3; }
+            footer { grid-row:    4 / 5; 
+                     grid-column: 1 / 3; }
+}		
+@media only screen and (max-width: 768px) {
+       #wrapper {  grid-template-columns: auto;
+                   grid-template-rows: 200px  auto auto  auto 100px;  }		 
+       header { grid-row:    1 / 2; 
+                grid-column: 1 / 2; }
+       nav    { grid-row:    4 / 5;
+                grid-column: 1 / 2; }
+       main   { grid-row:    2 / 3;
+                grid-column: 1 / 2;  }
+       aside  { grid-row:    3 / 4;
+                grid-column: 1 / 2 ;}
+       footer { grid-row:    5 / 6; 
+                grid-column: 1 / 2; }
+}
+
+header, main, nav, footer, figure, figcaption {display: block;}
+</style>
+</head>
+<body>
+<div id="wrapper">
+
+  <header>
+    <h1 style="background: url('blue.jpg');">Aloha Cruise</h1>
+  </header>
+  
+   <nav>
+    <ul>
+	 <li><a href="index.html">Home</a></li>
+     <li><a href="gallery.html">Gallery</a></li>
+     <li><a href="ourTeam.html">About Us</a></li>
+     <li><a href="map.html">Contact</a></li>
+	<li><a href="https://doryjoy.org/">Return to Portfolio</a></li>
+	</ul> 
+   </nav>
+
+   <main style="margin-left: 20px;">  <div class="gallery">	
+	 <img src="2show.jpg" class="photo">	 
+	<h2>Aloha Cruise is the Ultimate Vacation</h2>
+    <p><strong>Welcome Aboard ĀNUENUE<br>Where Dreams Come True</strong></p>
+  	<h2>Join Us!</h2>
+
+<video controls="controls"
+      width="360" height="250">
+	 <source src="ship.mp4" type="video/mp4"> 	
+   </video>
+
+ </main><br></br>
+
+   <aside style="margin-right: 10px;">
+
+<img src="ship.jpg" alt="ĀNUENUE" style="width: 180px; height: auto;">
+ 
+<h2 style="text-align: left;">ĀNUENUE</h2>
+
+<p style="text-align: left;">Experience the Hawaiian Islands on a Luxurious Yacht</p>	 
+   </aside>
+
+<br></br>  
+	</div><br></br>
+ 
+	<div>
+<!--footer-->
+<div class="footer">
+    Copyright &copy; Dory Gillikin<br>
+    <a href="mailto:1dorjoy@gmail.com">1dorjoy@gmail.com</a>
+</footer>  
+	</body>    
+		</div>
+			</html>
